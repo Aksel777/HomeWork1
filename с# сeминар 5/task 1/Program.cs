@@ -40,7 +40,7 @@ int leftBorder = -12;
 
 int[] myArray = GetRandomArray(Length, leftBorder, rightBorder);
 string myArrayString = string.Join(", ", myArray);
-Console.WriteLine("[" + myArrayString + "]");
+Console.WriteLine(myArrayString);
 int SumNegative = SumNegativeElments(myArray);
 int SumPositive = SumPositiveElments(myArray);
 
