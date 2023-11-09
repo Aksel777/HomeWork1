@@ -1,4 +1,4 @@
-﻿static int[] GenerateArray(int size)
+﻿int[] GenerateArray(int size)
 {
     Random random = new Random();
     int[] array = new int[size];
@@ -10,10 +10,10 @@
     return array;
 }
 
-static int[] NewArray(int[] array)
+int[] NewArray(int[] array)
 {
     int[] newArray = new int[array.Length/2 + array.Length%2];
-    for(int i=0; i<array.Length; i++)
+    for(int i=0; i<newArray.Length; i++)
     {
         newArray[i] = array[i] * array[(array.Length-1) - i];
         if(i == (array.Length-1) - i)
@@ -24,7 +24,7 @@ static int[] NewArray(int[] array)
     return newArray;
 }
 
-int[]array = GenerateArray(size:5);
+int[]array = GenerateArray(size:7);
 Console.Write(String.Join(" ", array));
 Console.WriteLine();
-Console.Write(NewArray(array));
+Console.Write(String.Join(" ", NewArray(array)));

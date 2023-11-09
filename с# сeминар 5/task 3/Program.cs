@@ -6,7 +6,8 @@
     {
         array[i]= Random.Shared.Next(leftBorder, rightBorder+1);
     }
-    return array;
+return array;
+    
 }
 
 bool SortArray(int[]array, int num)
@@ -24,5 +25,6 @@ return false;
 
 int[]myArray = RandomArray(10, -10, 10);
 Console.WriteLine(string.Join(", ", myArray));
+Console.WriteLine(" ");
 bool result = SortArray(myArray,7);
 Console.WriteLine(result);
