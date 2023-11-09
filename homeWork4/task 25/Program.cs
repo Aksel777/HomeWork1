@@ -12,11 +12,11 @@ int step = a;
 for (int i = 1; i < b; i++)
 {
 step = step * a;
-}
 Console.WriteLine("A ^ B = " + step);
-
-for (int i = 1; i < 0; i ++)
-{
-    step = step * 0;
 }
-Console.WriteLine("error");
+
+if ( b <= 0)
+{
+    step = 0;
+    Console.WriteLine("error");
+}

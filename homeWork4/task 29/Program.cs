@@ -2,7 +2,6 @@
 // и выводит их на экран. Вывод сделать отдельным методом.
 
 int [] array = new int [8];
-int size = 8;
 int a = array [0];
 array [0] = 0;
 Console.Write("[");

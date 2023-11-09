@@ -13,3 +13,4 @@ while (a>0)
 Console.WriteLine("сумма всех цифр в числе равна: " + sum);
 
 
+
